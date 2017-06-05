@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 
 import { AppComponent } from './app.component';
+import { ClueComponent } from './clue/clue.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClueComponent,
+    //BrowserAnimationsModule,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ClueComponent]
 })
 export class AppModule { }
